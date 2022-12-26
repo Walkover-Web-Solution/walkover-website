@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="footer_linkedin_icon" transform="translate(-723.529 -4980.809)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="16.5" cy="16.5" r="16.5" transform="translate(723.529 4980.809)" fill="#a4000c"/>
+    <g id="Group_46" data-name="Group 46" transform="translate(6343.527 1241.308)">
+      <g id="Group_43" data-name="Group 43" transform="translate(-5609.447 3753.323)">
+        <rect id="Rectangle_101" data-name="Rectangle 101" width="2.697" height="8.667" fill="#fff"/>
+      </g>
+      <g id="Group_44" data-name="Group 44" transform="translate(-5609.661 3749.013)">
+        <path id="Path_68" data-name="Path 68" d="M-5608.1,3749.013a1.561,1.561,0,0,0-1.562,1.561,1.561,1.561,0,0,0,1.563,1.563,1.563,1.563,0,0,0,1.562-1.563A1.562,1.562,0,0,0-5608.1,3749.013Z" transform="translate(5609.661 -3749.013)" fill="#fff"/>
+      </g>
+      <g id="Group_45" data-name="Group 45" transform="translate(-5605.062 3753.104)">
+        <path id="Path_69" data-name="Path 69" d="M-5598.831,3754.049a2.833,2.833,0,0,0-2.55,1.4h-.034v-1.181H-5604v8.667h2.69v-4.288c0-1.131.214-2.225,1.617-2.225,1.38,0,1.4,1.293,1.4,2.3v4.214h2.69v-4.757C-5595.6,3755.843-5596.107,3754.049-5598.831,3754.049Z" transform="translate(5603.999 -3754.049)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

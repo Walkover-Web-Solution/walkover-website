@@ -1,0 +1,315 @@
+@font-face {
+	font-family: 'CONSOLA';
+	src: local('../fonts/CONSOLA.woff'), 
+	url('../fonts/CONSOLA.woff') format('woff');
+}
+/*<<| <---------------------------------------CONSOLA-Fonts-------------------------------------------> |>>*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'CONSOLA';
+	color: #222528;
+}
+.home-body {
+    height: 100%;    
+}
+
+h1,h2,h3,h4,h5,h5,p,ul,ol,figure{
+	margin: 0; 
+	padding: 0;
+}
+button:focus{
+    box-shadow: none;
+    outline: none;
+}
+.bar1,.bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #d0000e;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+ .bar2{
+    width: 25px;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+a{
+	text-decoration: none !important;
+}
+.bold-heading{
+  	font-size: 70px;
+    font-weight: bold;
+    line-height: 90px;
+}
+.bold-sub-heading{
+  	font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.custom-p {
+	font-size: 26px;
+	line-height: 31px;
+}
+.btn-danger {
+    font-size: 18px;
+    padding: 10px 32px;
+    border-radius: 0;
+    background: #d0000e;
+    border: 1px solid #9a1822;
+}
+.btn-danger:hover{
+	background-color: #222528;
+	color: #fff;
+	border-color: #fff;
+}
+.btn-danger:active,
+.btn-danger:focus{
+	box-shadow: none !important;
+	outline: none;
+}
+.gray-bg {
+	background-color: #f5f5f3;
+}
+.section .container{
+    margin: auto;
+}
+/*<<| <---------------------------------------Stracture-Css-------------------------------------------> |>>*/
+/*<<| <--------------------------------------Header-Start-Here----------------------------------------> |>>*/
+.home-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 99;
+}
+.header a.nav-link {
+    color: #222528;    
+}
+.header a.nav-link:hover {
+	color: #dc281e;
+}
+
+.home-header.white {	
+    background: #fff;
+}
+.home-header.gray {	
+    background: #f5f5f3;
+}
+.home-header.trans {	
+    background: transparent;
+}
+.header.trans a.nav-link {
+    color: #fff;    
+}
+/*<<| <-------------------------------------banner--Start-Here----------------------------------------> |>>*/
+.banner-content h1 {
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: 500;
+}
+.culture-box p,
+.experiments-box p,
+.building-box p,
+.banner-content p {
+    margin: 20px 0 48px 0;
+}
+/*<<| <------------------------------------experiments-box---------------------------------------> |>>*/
+.product-mini-box p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    min-height: 25px;
+}
+.product-mini-box .technology-text {
+	font-weight: bold;
+	padding-right: 52px;
+}
+.our-product-box {
+    margin: 20px 0 48px 0;
+}
+.product-mini-box figure {
+    min-height: 45px;
+}
+/*<<| <------------------------------------testi-box---------------------------------------> |>>*/
+.testi-box{
+	background: url(../images/akesh.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+.testi-box .carousel-item h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 34px;
+    padding-bottom: 80px;
+}
+.testi-box .carousel-item {
+    /* max-width: 800px; */
+    width: 100%;
+}
+.testi-box .carousel-item p {
+    color: #fff;
+    font-size: 24px;
+    font-style: italic;
+    margin: 20px 0 35px 0;
+}
+.testi-box .carousel-indicators {
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.carousel-indicators{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.testi-box .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+.testi-box p.designation-text {
+    font-size: 18px;
+    font-style: normal;
+}
+/*<<| <------------------------------------idea-box---------------------------------------> |>>*/
+.idea-box{
+	background: url(../images/have_an_idea.jpg) no-repeat;
+	background-size: cover;        
+    padding-top: 200px;    
+}
+.idea-box .idea-box-inner .btn-danger {
+    margin: 50px 0;
+}
+.subscribe-box {
+    border-top: 1px solid #3b3f42;
+}
+.subscribe-box input{
+    min-height: 49px;
+    padding-left: 16px;
+    width: 350px;
+}
+
+/*<<| <------------------------------------Footer--Start--Here---------------------------------------> |>>*/
+footer {
+	background-color: #b9010d;
+	padding: 18px 0 0 0;
+}
+.footer-info-box,
+.footer-social-media ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+}
+.footer-info-box li,
+.footer-social-media li {
+    margin: 0 12px;
+}
+.footer-note{
+    color: #fff;
+    text-align: right;
+}
+.footer-address a.see-map {
+    color: #fff;
+    border-bottom: 1px solid;
+}
+.footer-bottom {
+    background: #af030f;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+.footer-bottom .row{
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+#section5{
+    background: #af030f;
+}
+#section5 .pp-tableCell {    
+    vertical-align: top;
+} 
+/*<<| <----------------------------------------Happines-Latter--Here-------------------------------------------> |>>*/
+.happiness-inbox {
+    max-width: 1080px;
+    width: 100%;
+}
+h1.happiness-heading {
+    margin: 115px 0 70px 0;
+    font-size: 50px;
+}
+.happiness-inbox .card-header {
+    padding: 0 45px 0 0;
+    margin-bottom: 0;
+    background-color: #f9f9f9;
+    border: none;
+    box-shadow: none;
+}
+.happiness-inbox .card {
+    border:none;
+    padding: 25px 35px 35px 25px;
+    background: #f9f9f9;
+    margin-bottom: 50px;
+}
+.card-header a {
+    color: #000;
+    font-size: 24px;
+    display: block;
+    position: relative;
+}
+.card-header a:before {
+    content: '';
+    background-image: url(../images/minus_icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -80px;
+    height: 40px;
+    width: 50px;
+    top: -5px;
+}
+.card-header a.collapsed:before {
+    background-image: url(../images/plus_icon.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 50px;
+}
+
+.card-header a span{
+    float: right;
+    font-size: 16px;
+}
+.card-header p {
+    font-size: 16px;
+    color: #aeaeae;
+    margin-top: 10px;
+}
+span.inbox-title {
+    background: #ce0913;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 9px;
+    font-weight: bold;
+    border: 1px solid #9c1f27;
+}
+.card-body {
+    background: #f9f9f9;
+    padding: 40px 250px 0 0;
+}
+.card-body p {    
+    font-size: 14px;
+    line-height: 27px;
+}
+.no_padding{
+    padding:0px;
+}

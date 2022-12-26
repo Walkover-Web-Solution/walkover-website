@@ -1,0 +1,221 @@
+/*<<| <----------------------------------------Responsive-----Here--------------------------------------> |>>*/
+@media screen and (height: 1080px) {
+    .idea-box{
+        padding-top: 250px; 
+    }
+}
+@media screen and (height: 1120px) {
+    .idea-box{
+        padding-top: 250px; 
+    }
+}
+@media screen and (height: 1440px) {
+    .idea-box{
+        padding-top: 300px; 
+    }
+}
+
+@media (max-width: 1600px){
+    .idea-box{
+        padding-top: 200px; 
+    }
+}
+@media (max-width: 1299px){
+    .idea-box {
+        padding-top: 200px;
+    }
+}
+@media (min-width: 1001px){
+	.idea-box{
+		background: url(../images/have_an_idea.jpg) no-repeat;
+		background-size: cover;
+    }
+    /* html {
+        scroll-snap-type: y mandatory;
+    }    
+    #section1,#section2,#section3,#section4, #section5 {
+        scroll-snap-align: center;
+    } */
+}
+@media (max-width: 991px){
+    .culture-box img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .bold-heading {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    #pp-nav {
+        display: none;
+    }
+    .custom-p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    header {
+        padding: 0 15px;
+    }
+    header li.nav-item {
+        padding: 8px 25px;
+        border-bottom: 1px solid #9E9E9E;
+    }
+    header li.nav-item:last-child {
+        border-bottom: none;
+    }
+    .footer-info-box{
+        justify-content: center;
+    }
+    .our-product-box {
+        margin: 30px 0 100px 0;
+    }
+    .card-header a {
+        font-size: 18px;
+    }
+    .card-body {
+        padding: 80px 0 0 0;
+    }
+    .btn-danger{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px){
+    
+      #section1, #section2, #section3, #section4{
+	padding:90px 20px 0px 20px;
+}
+    
+    .w-100 {
+    width: 80%!important;
+    padding-top: 30px;
+}
+    
+     .building-box p, .banner-content p {
+    margin: 20px 0 10px 0;
+}
+    
+    .testi-box .carousel-indicators{
+        justify-content: center;
+    }
+    
+    .bold-heading {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    
+    .footer-info-box, .footer-social-media ul {
+        justify-content: center;
+    }
+    .our-product-box {
+        margin: 30px 0 100px 0;
+    }
+    .card-header a span {
+        float: left;
+        margin-top: 7px;
+    }
+    .reverse{
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important;
+    }
+    .culture-box img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .btn-danger{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 575px){
+    
+    #section1, #section2, #section3, #section4{
+        height: inherit !important;
+	    padding:50px 0;
+    }
+    
+    .w-100 {
+    width: 80%!important;
+    padding-top: 30px;
+}
+    
+    .building-box p, .banner-content p {
+    margin: 0px 0 10px 0;
+}
+    .our-product-box{
+        margin: 0;
+    }
+    .our-product-box .col-12{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .testi-box .carousel-indicators{
+        justify-content: center;
+    }
+        
+    .btn-danger{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-mini-box figure{
+        min-height: 26px;
+        margin-top: 30px;
+    }
+    .product-mini-box figure img{
+        height: 22px;
+    }    
+    .product-mini-box p{
+        min-height: auto;
+    }
+    .bold-heading {
+        font-size: 22px;
+        line-height: initial;
+    }
+    .custom-p {
+        font-size: 18px;
+        line-height: initial;
+    }
+    .subscribe-box input {
+        margin-bottom: 30px;
+    }
+    .footer-address {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-bottom {
+        padding: 15px 0;
+        margin-top: 12px;
+        text-align: center;
+    }
+    .card-header a {
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 24px;
+    }
+    .happiness-inbox .card-header {
+        padding: 0 0 0 0;
+    }
+    .card-header a:before {
+        right: -46px;
+    }
+    h1.happiness-heading {        
+        font-size: 26px;
+    }  
+    .testi-box .carousel-item p{
+        font-size: 18px;
+    }  
+    .testi-box .carousel-indicators{
+        margin-bottom: -10px;
+    }
+
+    .culture-box img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
