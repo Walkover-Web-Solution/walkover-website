@@ -54,6 +54,20 @@
         list-style: disc;
         margin-left: 20px;
       }
+      .faq {
+        margin-bottom: 20px;        
+        align-item:center;
+      }
+      .faq h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .faq p {
+        margin-bottom: 10px;
+      }
+      .faq .answer {
+        margin-left: 30px;
+      }
 
       footer {
         background-color: #ccc;
@@ -74,64 +88,89 @@
       </nav>
     </header>
     <main>
-      <section id="about">
-        <h2>About Mail Parser</h2>
+        <section id="about">
+            <h2>About Mail Parser</h2>
 
-        <p>
-          <img
-            src="gmail_parser_logo.png"
-            width="50px"
-            height="50px"
-            alt="mail_parser_logo"
-          />Mail Parser is a user-friendly application designed to enhance your
-          online experience. Our app allows users to parse their mail and send
-          the mail data to their endpoint/webhook.
-        </p>
-        <p>
-          We understand the importance of privacy and security, and we take all
-          necessary measures to ensure that our users' data is safe and
-          protected at all times.
-        </p>
-        <p>
-          We never share data to third party or save the data in our database we
-          directly parse data and send to your endpoint
-        </p>
-        <p>
-          We track your mail and notify you with the data of the mail to your
-          endpoint or webhook provided by you, whenever the new mail from your
-          whitelisted domain or email has received
-        </p>
-      </section>
-      <section id="features">
-        <h2>Features</h2>
-        <ul>
-          <li>Mail Parsing.</li>
-          <li>You can define from which domain or email mail to be parsed.</li>
-          <li>User driven</li>
-          <li>
-            All the setting are fixed by the user only. No default setting is
-            used.
-          </li>
-          <li>Privacy and security our first priority</li>
-          <li>Ease of use</li>
-          <li>Improved user experience</li>
-        </ul>
-      </section>
-      <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p>
-          We take your privacy seriously. Our Privacy Policy explains how we
-          collect, use, store, and share your data. We only access and use data
-          that is necessary for the functioning of our app. We never collect
-          user data.
-        </p>
-        <p>
-          You can read our full Privacy Policy
-          <a href="privacy-policy.html">here</a>.
-        </p>
-        <p><a href="terms-of-service.html">Terms of Service</a></p>
-      </section>
+            <p>
+                <img src="gmail_parser_logo.png"
+                     width="50px"
+                     height="50px"
+                     alt="mail_parser_logo" />Mail Parser is a user-friendly application designed to enhance user's
+                online experience. Our app allows users to parse their mail and send the mail data to their
+                endpoint/webhook.
+            </p>
+            <p>
+                This application saves users time and resources by notifying them about their important mails so that
+                they don't miss any important update.
+            </p>
+            <p>
+                In our application, the user can add the email id or the domain of their important source of email to
+                get updated about receiving mail from those important senders. Then the whole content of the mail will
+                be sent and displayed on the webbook or respective endpoint. We track your mail and notify you with the
+                data of the mail to your endpoint or webhook provided by you, whenever the new mail from your
+                whitelisted domain or email has received.
+            </p>
+            <p>
+                We understand the importance of user data privacy and security, and we take all necessary measures to
+                ensure that our users' data is safe and protected at all times. We never share data to third party or
+                save the data in our database .Our application just directly parse data and send to your endpoint.
+            </p>
+        </section>
+        <section id="features">
+            <h2>Advantages</h2>
+            <ul>
+                <li>	<b>Save users time</b> – Our application save users time by displaying all their important mails as one place. So the user need not have to constantly keep check on gmail. .</li>
+                <li>	<b>Continuous parsing</b> – The application will continuos parse the mail box and notify the user about the same.</li>
+                <li>	<b>Never miss important update</b> - The user need not to check their mail box frequently to check for an important update. Our application will keep track of all the mails coming from whitelisted mail ids or domain and directly sent it to their specified webbook. SO the user need not to keep their gmail open all the time. </li>
+                <li>	<b>Data privacy </b>– We don’t store user data in any database. So the privacy and security of the users’ data will be maintained.</li>
+                   </ul>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Mail Parsing.</li>
+                <li>User can define from which domain or email, mail need to be parsed.</li>
+                <li>User driven as the whole control is in the hands of the user to choose their whitelist emails and endpoint.</li>
+                <li>There is no involvement of any third party for any task.</li>
+                <li>
+                    All the setting are fixed by the user only. No default setting is
+                    used.
+                </li>
+                <li>Privacy and security our first priority</li>
+                <li>Ease of use</li>
+                <li>Our app functionality will enhance  user experience and help to get the mail on time</li>
+            </ul>
+        </section>
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>
+                We take your privacy seriously. Our Privacy Policy explains how we
+                collect, use, store, and share your data. We only access and use data
+                that is necessary for the functioning of our app. We never collect
+                user data.
+            </p>
+            <p>
+                You can read our full Privacy Policy
+                <a href="privacy-policy.html">here</a>.
+            </p>
+            <p><a href="terms-of-service.html">Terms of Service</a></p>
+        </section>
+        <div class="faq">
+          <h2>What our app will do with user data?</h2>
+          <p>We understand the importance of user data privacy and security, and we take all necessary measures to
+            ensure that our users' data is safe and protected at all times. We never share data to third party or
+            save the data in our database .Our app just directly parse data and send to your endpoint. We don't do anything with the user data.</p>
+        </div>
+        <div class="faq">
+          <h2>How it will be helpfull to a bussiness man?</h2>
+          <p>It will manage your gmail and notify you whenever important mail arrives, with the data. So, no need to waste resources for checking for important mails in your gmail. We will handle it you focus on your other tasks. It will save your resources and time.</p>
+        </div>
+        <div class="faq">
+          <h2>How easy it will be to use?</h2>
+          <p>It is very easy to use only you want to do just install it and set up the setting page with your important mails and domains on which you want our app to keep eye. And where you want notification and data of your mail you want to specify it then click save&start. Rest we will handle.</p>
+        </div>
     </main>
+
     <footer>
       <p>
         <b>Disclosure</b>: Mail Parser use and transfer to any other app of
