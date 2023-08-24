@@ -320,3 +320,77 @@ span.inbox-title {
 .menu-dropdown{
     width: 20px;
 }
+.signup-modal-cont-bg{
+    display: none;
+    background: #3b3f423a;
+    z-index: 9;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+.signup-modal-form ,.signup-form{
+    width: 100%;
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+#signup{
+    cursor: pointer;
+}
+
+#sign-message{
+    display: none;
+    text-align: center;
+}
+#sign-input{
+    display: none;
+}
+.show-overlay{
+    display: block;
+}
+.signup-show{
+    display: flex!important;
+}
+.signup-hide{
+    display: none!important;
+}
+.show-signup{
+    display: flex!important;
+}
+.ohh{
+    overflow: hidden;
+}
+.signup-modal-cont{
+    width:clamp(250px,50vw,500px);
+    height: 400px;
+    background: #f9f9f9;
+    border:1px solid #9a1822;
+    /* border-radius: 4px; */
+    padding: 26px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.input-section{
+    padding: 6px;
+    width: 100%;
+    border-radius: none;
+    outline: none;
+}
+.input-submit{
+    width: fit-content;
+    padding: 6px 10px ;
+    background-color: #ce0913;
+    outline: none ;
+    border: none;
+    color: white;
+
+}
