@@ -14,7 +14,7 @@
       name="facebook-domain-verification"
       content="xjtyksaw7zor90w6vlf55t1pfabzb1"
     />
-    <title>A design and tech startup for startups - Walkover</title>
+    <title>Walkover - Signup</title>
     <meta
       name="description"
       content="A team of young & passionate leaders working towards changing the world through design, technology & ideas. We’re hiring, connect with us for jobs in IT, software & design."
@@ -38,6 +38,7 @@
       content="assets/images/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="noindex" />
   </head>
 
   <body class="home-body" id="home-body">
@@ -58,17 +59,17 @@
 
       <!----| sign up modal|------>
 
-      <script>
+      <!-- <script>
         $(document).ready(function () {
           $("#submitbtn").click(function () {
             $("#sign-input").removeClass("show-signup");
             $("#sign-message").addClass("show-signup");
           });
         });
-      </script>
+      </script> -->
       <script>
         $(document).ready(function () {
-          $("#submitbtn").click(function (event) {
+          $("#signupform").submit(function (event) {
             event.preventDefault(); // Prevent form submission (or use type="button" for the button element)
             sendDataToAPI();
           });
@@ -108,6 +109,8 @@
             .then((data) => {
               // Handle the API response here
               console.log(data);
+              $("#sign-input").removeClass("show-signup");
+              $("#sign-message").addClass("show-signup");
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -124,18 +127,21 @@
               id="name"
               class="input-section"
               placeholder="Name"
+              required
             />
             <input
               type="email"
               id="email"
               class="input-section"
               placeholder="Email"
+              required
             />
             <input
               type="tel"
               id="phone"
               class="input-section"
               placeholder="Phone Number"
+              required
             />
             <div class="d-flex align-items-start">
               <input
@@ -144,6 +150,7 @@
                 
                 placeholder="Phone Number"
                 style="margin-top: 5px; margin-right: 10px;"
+                required
               />
               <label for="consent">I hereby give my consent to receive OTPs & Notifications alerts via SMS & Email</label>
             </div>
