@@ -395,28 +395,6 @@ span.inbox-title {
     width: 20px;
 }
 
-.signup-modal-cont-bg {
-    display: none;
-    background: #3b3f423a;
-    z-index: 9;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
-.show-signup{
-    display: flex!important;
-}
-
-.signup-modal-form,
-.signup-form {
-    width: 100%;
-    align-items: start;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
-}
-
 #signup {
     cursor: pointer;
 }
@@ -429,28 +407,31 @@ span.inbox-title {
     flex-direction: column;
 }
 
-#sign-input {
-    display: none;
+.signup-modal-cont {                
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    padding: 24px;
 }
 
-.signup-modal-cont {
-    width: clamp(250px, 50vw, 500px);
-    height: 400px;
+.signup-modal-form{
+    max-width: 600px;
     background: #f9f9f9;
-    border: 1px solid #9a1822;
-    /* border-radius: 4px; */
-    padding: 26px;
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 1px solid #9a1822;    
+    width: 100%;
+    padding: 24px;
+    align-items: start;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 16px;    
 }
 
+.signup-modal-form label{
+    margin-bottom: 0;
+}
 .input-section {
     padding: 6px;
     width: 100%;
