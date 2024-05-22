@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.container .content{
+    max-width: 1200px;
+}
+
+.heading {
+    font-size: 40px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-align: start;
+}
+
+.subheading {
+    font-size: 32px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    letter-spacing: normal;
+    line-height: 48px;
+    text-align: start;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    white-space: normal;
+    word-spacing: 0px;
+}
+
+.list {
+    font-size: 16px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    white-space: normal;
+    word-spacing: 0px;
+}
+
+.link {
+    color: rgb(4, 82, 165);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link u {
+    text-decoration: underline;
+}
