@@ -176,11 +176,12 @@
         hide_launcher: true,
       };
     </script>
-    <script
+    <!-- <script
       type="text/javascript"
       onload="initChatWidget(helloConfig, 5000)"
       src="https://control.msg91.com/app/assets/widget/chat-widget.js"
-    ></script>
+    ></script> -->
+    <script src="https://blacksea.msg91.com/chat-widget.js" onload="initChatWidget(helloConfig, 0)" data-nscript="afterInteractive"></script>
     <script>
       // Variable to track the chat widget state
       var isChatWidgetOpen = false;
@@ -246,105 +247,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-md-3">
+                  <a
+                    class="nav-link"
+                    href="/about"
+                    target="_blank"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item mr-md-3">
+                  <a class="nav-link" href="/products">Products</a>
+                </li>
+                <li class="nav-item mr-md-3">
                   <a class="nav-link" href="/happiness">Happiness Newsletter</a>
                 </li>
+                
                 <li class="nav-item mr-md-3">
-                  <div class="dropdown show">
-                    <a
-                      class="nav-link"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Products
-                      <img
-                        src="/assets/images/menu-drop.svg"
-                        class="menu-dropdown"
-                      />
-                    </a>
-
-                    <div
-                      class="dropdown-menu"
-                      id="dropdown-products"
-                      aria-labelledby="dropdownMenuLink"
-                    >
-                      <script>
-                        // Event listener using window.onload
-                        window.onload = function () {
-                          // Perform the API call here
-                          fetch(
-                            "https://dbdash-backend-h7duexlbuq-el.a.run.app/649ecc5d95dd724451a881b2/tbl8aoimi",
-                            {
-                              headers: {
-                                "auth-key": "keyYgZZF2-GbJOn",
-                              },
-                            }
-                          )
-                            .then((response) => response.json())
-                            .then((data) => {
-                              var jsonData = data?.data?.rows;
-                              console.log();
-                              const container =
-                                document.getElementById("dropdown-products");
-
-                              jsonData.forEach((item) => {
-                                const itemContainer =
-                                  document.createElement("div");
-                                itemContainer.innerHTML = `
-								<a
-									  class="dropdown-item"
-									  target="_blank"
-									  href="${item.fld8aoimihx4}"
-									>
-									  <div class="my-2">
-										<div class="d-flex align-items-center">
-										  <img
-											class="menu-dropdown-logo"
-											src="${item.fld8aoimi56n[0]}"
-											alt="MSG91-logo"
-										  />
-										  <h2 class="custom-p">${item.fld8aoimi8br}</h2>
-										</div>
-										<span>${item.fld8aoimi82y}</span>
-									  </div>
-									</a>
-									`;
-
-                                container.appendChild(itemContainer);
-                              });
-                            })
-                            .catch((error) => {
-                              // Handle any errors that occur during the API call
-                              console.error(error);
-                            });
-                        };
-                      </script>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item mr-md-3">
-                  <a
-                    class="nav-link"
-                    href="https://blog.walkover.in/"
-                    target="_blank"
-                    >Blog</a
-                  >
-                </li>
-                <li class="nav-item mr-md-3">
-                  <a
-                    class="nav-link"
-                    href="https://walkover.in/handbook"
-                    target="_blank"
-                    >Handbook</a
-                  >
-                </li>
-                <!-- <li class="nav-item mr-md-3">
-				   <a class="nav-link"  href="/university">University</a>
-				</li> -->
-                <li class="nav-item">
                   <a
                     class="nav-link"
                     href="/careers"
@@ -352,9 +269,16 @@
                     >Join Us</a
                   >
                 </li>
-                <!-- <li class="nav-item">
-                  <a href="/signup.html" class="nav-link">Sign Up</a>
-                </li> -->
+
+                <li class="nav-item mr-md-3">
+                  <a
+                    class="nav-link"
+                    href="https://blog.walkover.in/"
+                    target="_blank"
+                    >Blog</a
+                  >
+                </li>                
+                              
               </ul>
             </div>
           </nav>
@@ -588,24 +512,7 @@
           </div>
         </div>
       </section>
-      <!-----------------------------| culture-box Start |----------------------------------->
-
-      <section>
-        <div class="container my-5">
-          <h2 class="my-3">Freedom + Responsibility at Walkover</h2>
-          <div class="YouTube" style="height: 800px">
-            <iframe
-              src="https://www.youtube.com/embed/iAJn9pIyJws?autoplay=0&mute=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+      
       <!-----------------------------| idea-box Start |----------------------------------->
       <section class="section flex-column" id="">
         <!-- <div class="idea-box">
